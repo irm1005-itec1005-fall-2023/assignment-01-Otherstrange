@@ -194,7 +194,9 @@
         <p>Additionally, Rotom has the following forms that are cosmetic:</p>
 
         <section>
-          <h3>Rotom Pokedex (he was at the top of the page, remember?)</h3>
+          <h3>Rotom Pokedex</h3>
+
+          <small>(he was at the top of the page, remember?)</small>
 
           <img src="images/0479Rotom-Pokédex.png" alt="Picture of Rotom Pokedex">
           <!-- A Pokedex is a Pokemon thing. It's basically a Pokemon encyclopedia -->
@@ -233,6 +235,130 @@
         <h2 id="order">Order a Rotom</h2>
 
         <p>Would you like to have your very own Rotom???? I know I would!</p>
+
+        <p>Well, you're in luck! If you answered yes to all of the previous 1 question(s), you can get your very own Rotom by filling out this form!</p>
+
+        <form>
+          <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Name: </label>
+            <input type="text" id="name" autocomplete="name" required>
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" autocomplete="email" required>
+
+            <label for="phone">Phone Number: </label>
+            <input type="tel" id="phone" autocomplete="tel" required>
+
+            <label for="maiden">Mother's Maiden Name (necessary): </label>
+            <input type="text" id="maiden" required>
+
+            <label for="sin">Social Insurance Number (also necessary): </label>
+            <input for="text" id="sin" required>
+          </fieldset>
+
+          <fieldset>
+            <legend>Shipping Address</legend>
+
+            <label for="name2">First Name: </label>
+            <input type="text" id="name2" autocomplete="given-name" required>
+
+            <label for="lastname">Last Name: </label>
+            <input type="text" id="lastname" autocomplete="family-name" required>
+
+            <label for="company">Company: </label>
+            <input type="text" id="company" autocomplete="organization">
+
+            <label for="address">Street Address: </label>
+            <input type="text" id="address" autocomplete="shipping street-address" required>
+
+            <label for="city">City: </label>
+            <input type="text" id="city" required>
+
+            <label for="post">Postal Code: </label>
+            <input type="text" id="post" autocomplete="postal-code" required>
+
+            <label for="pnumber">Phone Number: </label>
+            <input type="text" id="pnumber" autocomplete="tel" required>
+
+            <label for="country">Country: </label>
+            <select id="country" name="country" required>
+              <option value="">Select A Country</option>
+              <option value="america">United States</option>
+              <option value="canada">Canada</option>
+              <option value="other">Every other country</option>
+              <option value="zealand">New Zealand</option>
+            </select>
+
+            <label for="region">Region/State: </label>
+            <select id="region" name="region" required>
+              <option value="">-Please Select-</option>
+              <option value="real">I need you to get real</option>
+              <option value="code">I ain't coding all these in</option>
+            </select>
+
+            <label for="billing">Billing Address Same As Shipping?</label>
+            <input type="radio" id="yes" name="billing" value="yes" required>
+            <label for="yes">Yes</label>
+            <input type="radio" id="ofcourse" name="billing" value="ofcourse">
+            <label for="ofcourse">OF COURSE IT IS</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Worthiness</legend>
+
+            <p>
+              Up until now you were under the assumption that 
+              getting a Rotom would be as easy as just paying 
+              for it. Well you'd be <b>DEAD WRONG.</b>
+            </p>
+
+            <p>
+              That's not the only thing that's dead, as you'll 
+              be dead if you can't pass this <b>WORTHINESS TEST.</b>
+            </p>
+
+            <p>
+              And if you brought a #2 lead pencil, you already 
+              lost <b>5 WORTHINESS POINTS</b> because this is not
+              a handwritten test.
+            </p>
+
+            <label for="worthy">Tell us why you're <b>WORTHY</b> in the following text box:</label>
+
+            <textarea id="worthy" name="worthy" cols="20" rows="5" required></textarea>
+            
+            <small>
+              Note: Worthiness will not be determined immediately upon submission. 
+              Please allow for up to 3 business months of time for worthiness 
+              to be determined. If you are determined unworthy, you will die
+              as soon as the decision is made. Best hope you make it, bud.
+            </small>
+            
+            <!-- 
+            I would like to note that <b> is supposed to be used for
+            elements with special importance, and not intended for
+            making text appear bold. 
+            
+            To make things properly bold involves CSS, and I don't 
+            really want to look at that right now, so for just this 
+            one purpose and never again, I'm going to incorrectly use it. 
+
+            Basically, I know it's incorrect please don't kill me over it.
+            -->
+
+          </fieldset>
+
+          <fieldset>
+            <legend>Submit Request</legend>
+
+            <input type="checkbox" id="iam" name="iamworthy" required>
+            <label for="iam"><b>I am worthy.</b></label>
+
+            <input type="submit" name="submit">
+          </fieldset>
+        </form>
       </section>
     </main>
 
